@@ -30,7 +30,7 @@
     $(document).ready(function(){
       $('.slider').bxSlider({
         mode:'fade',
-        responsive:false,
+        responsive:true,
         controls:false,
         auto:true,
         pause:3000
@@ -42,9 +42,49 @@
 <link rel="stylesheet" href="./css/index.css">
 <link rel="stylesheet" href="./css/footer.css">
   <title>HOLLYS Coffee</title>
+  
   <style>
 
     
+
+@media screen and(min-width: 940px) {
+  #{
+    width: 1920px;
+  }
+
+}
+ 
+
+@media screen and(min-width: 50%) {
+  #{
+    
+
+     overflow: hidden;
+    width: 940px;
+  }
+
+}
+.footer{min-width: 940px;}
+
+.main_banner {
+  min-width: 940px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.header{min-width: 940px;}
+    /* main banner section */
+    .main_banner{margin-bottom:40px;display: inline-block;}
+    .main_banner .slider img{cursor: pointer;}
+    .main_banner .bx-wrapper {-moz-box-shadow:none;-webkit-box-shadow:none;box-shadow:none;border:none;background:transparent;}
+    .main_banner .bx-wrapper .bx-pager{bottom:32px;}
+    .main_banner .bx-wrapper .bx-pager.bx-default-pager a{background-color:#cccccc;width:16px;height:16px;margin-left:8.5px;margin-right:8.5px;border-radius:8px;}
+    .main_banner .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {background-color:#ba000c;}
+
+
+
+
+.bx-viewport{width: 1920px;}
+.bx-wrapper{width: 1920px;}
 
 
 
@@ -317,8 +357,8 @@
     </section>
     <footer class="footer">
         <div class="grid940">
-            <ul class="claerfix">
-                <div class="grid940">
+            <ul class="clearfix">
+                <div class="gri940">
                     <li><a href="#">개인정보처리방침</a></li>
                     <li><a href="#">서비스이용약관</a></li>
                     <li><a href="#">멤버십이용약관</a></li>
@@ -335,6 +375,7 @@
             </p>
         </div>
     </footer>
+    
   </div>
 </body>
 </html>
